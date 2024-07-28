@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 export const Banner = () => {
@@ -8,12 +8,12 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
 
-  const toRotate = [
+  const toRotate = useMemo(() => [
     "Video Editor",
     "Web Developer",
     "Web Designer",
     "UI/UX Designer",
-  ];
+  ], []);
 
   const tick = useCallback(() => {
     const i = loopNum % toRotate.length;
@@ -36,7 +36,7 @@ export const Banner = () => {
       setLoopNum(loopNum + 1);
       setDelta(500);
     }
-  }, [loopNum, toRotate, isDeleting, text]);
+  }, [loopNum, toRotate, isDeleting, text, period]);
 
   useEffect(() => {
     const ticker = setInterval(() => {
