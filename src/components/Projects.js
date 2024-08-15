@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Row, Col, Card, Modal } from 'react-bootstrap';
-import vid1 from '../assets/videos/Maximizing.mp4';
+// import vid1 from '../assets/videos/Maximizing.mp4';
 import MIKE from '../assets/img/MIKE.png';
 
 export const Projects = () => {
@@ -19,7 +19,7 @@ export const Projects = () => {
 
   const projects = {
     videoEditing: [
-      { title: 'MAXIMIZING YOUR BRAIN POTENTIAL', src: vid1, description: 'This is Video 1' },
+      { title: 'MAXIMIZING YOUR BRAIN POTENTIAL', src: 'video1.mp4', description: 'This is Video 1' },
       { title: 'Video 2', src: 'video2.mp4', description: 'This is Video 2' },
       { title: 'Video 3', src: 'video3.mp4', description: 'This is Video 3' }
     ],
