@@ -12,7 +12,6 @@ export const Banner = () => {
     "Video Editor",
     "Web Developer",
     "Web Designer",
-    "UI/UX Designer",
   ], []);
 
   const tick = useCallback(() => {
@@ -58,7 +57,7 @@ export const Banner = () => {
               <span
                 className="txt-rotate"
                 dataPeriod="1000"
-                data-rotate='["Video Editor", "Web Developer", "Web Designer", "UI/UX Designer"]'
+                data-rotate='["Video Editor", "Web Developer", "Web Designer"]'
               >
                 <span className="wrap">{text}</span>
               </span>

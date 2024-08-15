@@ -67,6 +67,9 @@ export const NavBar = () => {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
+          <span className="email-text">
+              balajadia.pro@gmail.com
+            </span>
   <div className="social-icon">
     <a 
       href="https://www.linkedin.com/in/michael-balajadia-8417322b9/" 
