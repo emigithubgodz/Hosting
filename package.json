@@ -1,5 +1,5 @@
 {
-  "homepage": "https://emigithubgodz.github.io/Hosting/",
+  "homepage": "https://emigithubgodz.github.io/portfolio/",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "main -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
