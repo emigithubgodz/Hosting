@@ -41,34 +41,33 @@ export const Projects = () => {
         <h2>Projects</h2>
 
         <h3>Video Editing</h3>
-<Row>
-  {projects.videoEditing.map((project, index) => (
-    <Col key={index} xs={12} md={4} className="mb-4">
-      <Card className="project-card" onClick={() => handleShow(project.src)}>
-        <video className="w-100" muted>
-          <source src={project.src} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
-      </Card>
-      <p className="project-title text-center">{project.title}</p>
-    </Col>
-  ))}
-</Row>
+        <Row>
+          {projects.videoEditing.map((project, index) => (
+            <Col key={index} xs={12} md={4} className="mb-4">
+              <Card className="project-card" onClick={() => handleShow(project.src)}>
+                <video className="w-100" muted>
+                  <source src={project.src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </Card>
+              <p className="project-title text-center">{project.title}</p>
+            </Col>
+          ))}
+        </Row>
 
-<Modal show={showModal} onHide={handleClose} centered size="lg" className="custom-modal">
-  <Modal.Body className="p-0">
-    {currentVideo && (
-      <video controls className="w-100">
-        <source src={currentVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    )}
-  </Modal.Body>
-</Modal>
+        <Modal show={showModal} onHide={handleClose} centered size="lg" className="custom-modal">
+          <Modal.Body className="p-0">
+            {currentVideo && (
+              <video controls className="w-100">
+                <source src={currentVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+          </Modal.Body>
+        </Modal>
 
-
-        <h3>Website Developed</h3>
+        {/* Comment out the following sections */}
+        {/* <h3>Website Developed</h3>
         <Row>
           {projects.websiteDeveloped.map((project, index) => (
             <Col key={index} xs={12} md={4} className="mb-4">
@@ -98,7 +97,7 @@ export const Projects = () => {
               <p className="project-title text-center">{project.title}</p>
             </Col>
           ))}
-        </Row>
+        </Row> */}
       </Container>
     </section>
   );
