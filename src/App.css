@@ -565,8 +565,95 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #222; /* Limits the height of the video to 80% of the viewport height */
 }
 
+/* Spinner */
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+/* About me */
+
+.about-me {
+  color: white;
+  text-align: left;
+  font-style: italic;
+  text-indent: 40px;
+}
+
+.highlight {
+  color:#0059ff;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+/* contact */
+.contact-me {
+  padding: 60px 0;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.contact-header .line {
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 20px;
+}
+
+.contact-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.contact-info-row {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.contact-info p {
+  margin-top: 10px;
+}
 
 
+
+
+
+
+.social-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.social-icon-container .line {
+  flex: 1;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social-icon-container .social-icon {
+  display: flex;
+  gap: 1rem; 
+  z-index: 1;
+}
 
 
 

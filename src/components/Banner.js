@@ -63,6 +63,12 @@ export const Banner = () => {
               </span>
             </h1>
             <p>Welcome to my portfolio website.</p>
+            <p className="about-me">
+              I'm <span className="highlight">Michael Balajadia</span>, an aspiring candidate for roles in web designing, web development, or digital marketing. 
+              I offer a strong foundation in organization and dependability. I am adept at managing multiple 
+              priorities with a positive attitude and am eager to take on additional responsibilities to contribute 
+              to the team's success.
+            </p>
           </Col>
         </Row>
       </Container>
